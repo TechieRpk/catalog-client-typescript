@@ -1,0 +1,16 @@
+.gitignore
+.npmignore
+README.md
+api.ts
+base.ts
+common.ts
+configuration.ts
+docs/DatasetDTO.md
+docs/DatasetSensitivity.md
+docs/DatasetsApi.md
+docs/FieldDTO.md
+git_push.sh
+index.ts
+package.json
+tsconfig.esm.json
+tsconfig.json
