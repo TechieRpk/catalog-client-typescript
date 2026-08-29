@@ -29,6 +29,7 @@ export interface DatasetDTO {
     'ownerTeam': string;
     'tags': Array<string>;
     'sensitivity': DatasetSensitivity;
+    'retentionDays': number;
     'schemaFields': Array<FieldDTO>;
     'updatedAt'?: string | null;
 }

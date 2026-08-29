@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **ownerTeam** | **string** |  | [default to undefined]
 **tags** | **Array&lt;string&gt;** |  | [default to undefined]
 **sensitivity** | [**DatasetSensitivity**](DatasetSensitivity.md) |  | [default to undefined]
+**retentionDays** | **number** |  | [default to undefined]
 **schemaFields** | [**Array&lt;FieldDTO&gt;**](FieldDTO.md) |  | [default to undefined]
 **updatedAt** | **string** |  | [optional] [default to undefined]
 
@@ -24,6 +25,7 @@ const instance: DatasetDTO = {
     ownerTeam,
     tags,
     sensitivity,
+    retentionDays,
     schemaFields,
     updatedAt,
 };
