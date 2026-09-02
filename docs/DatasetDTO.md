@@ -7,9 +7,12 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **number** |  | [optional] [default to undefined]
 **name** | **string** |  | [default to undefined]
-**ownerTeam** | **string** |  | [default to undefined]
+**owningTeam** | **string** |  | [default to undefined]
+**sourceSystem** | **string** |  | [default to undefined]
 **tags** | **Array&lt;string&gt;** |  | [default to undefined]
 **sensitivity** | [**DatasetSensitivity**](DatasetSensitivity.md) |  | [default to undefined]
+**retentionDays** | **number** |  | [default to undefined]
+**refreshIntervalHours** | **number** |  | [default to undefined]
 **schemaFields** | [**Array&lt;FieldDTO&gt;**](FieldDTO.md) |  | [default to undefined]
 **updatedAt** | **string** |  | [optional] [default to undefined]
 
@@ -21,9 +24,12 @@ import { DatasetDTO } from '@javazone-2026/catalog-client';
 const instance: DatasetDTO = {
     id,
     name,
-    ownerTeam,
+    owningTeam,
+    sourceSystem,
     tags,
     sensitivity,
+    retentionDays,
+    refreshIntervalHours,
     schemaFields,
     updatedAt,
 };

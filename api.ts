@@ -26,9 +26,12 @@ import { BASE_PATH, COLLECTION_FORMATS, BaseAPI, RequiredError, operationServerM
 export interface DatasetDTO {
     'id'?: number | null;
     'name': string;
-    'ownerTeam': string;
+    'owningTeam': string;
+    'sourceSystem': string;
     'tags': Array<string>;
     'sensitivity': DatasetSensitivity;
+    'retentionDays': number;
+    'refreshIntervalHours': number;
     'schemaFields': Array<FieldDTO>;
     'updatedAt'?: string | null;
 }
